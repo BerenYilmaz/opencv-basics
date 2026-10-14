@@ -1,20 +1,20 @@
-# OpenCV Temel G�r�nt� ��leme Uygulamalar�
+# OpenCV Temel Görüntü İşleme Uygulamaları
 
-Python ile k��e ve kenar tespiti, g�r�lt� azaltma, kamera kullan�m� ve Haar cascade uygulamalar�.
+Python ile köşe ve kenar tespiti, gürültü azaltma, kamera kullanımı ve Haar cascade uygulamaları.
 
-## Temel OpenCV uygulamalar�
+## Temel OpenCV uygulamaları
 
-| Dosya | ��lev | Girdi |
+| Dosya | İşlev | Girdi |
 |---|---|---|
-| `corner_detection.py` | Harris, Shi-Tomasi ve Canny kar��la�t�rmas� | `cat_image.jpg`, `sudoku.jpg` |
-| `denoise.py` | Bilateral filtre ile g�r�lt� azaltma | `image3.jpeg` |
-| `face_detection.py` | Haar cascade ile kamerada y�z, g�z ve g�l�mseme tespiti | Kamera 0, `cascade/` |
-| `oppening_Cam.py` | Kameradan gri tonlamal� g�r�nt� | Kamera 0 |
-| `rgb_output.py` | T�klanan video pikselinin RGB de�erlerini yazd�rma | Kullan�c�n�n sa�layaca�� `video.mp4` |
+| `corner_detection.py` | Harris, Shi–Tomasi ve Canny karşılaştırması | `cat_image.jpg`, `sudoku.jpg` |
+| `denoise.py` | Bilateral filtre ile gürültü azaltma | `image3.jpeg` |
+| `face_detection.py` | Haar cascade ile kamerada yüz, göz ve gülümseme tespiti | Kamera 0, `cascade/` |
+| `oppening_Cam.py` | Kameradan gri tonlamalı görüntü | Kamera 0 |
+| `rgb_output.py` | Tıklanan video pikselinin RGB değerlerini yazdırma | Kullanıcının sağlayacağı `video.mp4` |
 
-## Kurulum ve kullan�m
+## Kurulum ve kullanım
 
-Python 3.10 veya �zeri bir sanal ortam �nerilir. Ba��ml�l�k s�r�mleri sabitlenmemi�tir; bu depo do�rulanm�� bir ortam kilidi i�ermez.
+Python 3.10 veya üzeri bir sanal ortam önerilir. Bağımlılık sürümleri sabitlenmemiştir; bu depo doğrulanmış bir ortam kilidi içermez.
 
 ```powershell
 python -m venv .venv
@@ -24,7 +24,7 @@ python corner_detection.py
 python face_detection.py --cascade cascade
 ```
 
-Bu komutlar� depo k�k�nden �al��t�r�n. Kamera ve video pencerelerinde `q` ile ��k�l�r. OpenCV pencereleri i�in masa�st� oturumu gerekir.
+Bu komutları depo kökünden çalıştırın. Kamera ve video pencerelerinde `q` ile çıkılır. OpenCV pencereleri için masaüstü oturumu gerekir.
 
 
-video.mp4 depoya dahil de�ildir; rgb_output.py i�in kendi videonuzu bu adla depo k�k�ne koyun. Cascade XML dosyalar�ndaki ���nc� taraf lisans bildirimleri korunmu�tur.
+video.mp4 depoya dahil değildir; rgb_output.py için kendi videonuzu bu adla depo köküne koyun. Cascade XML dosyalarındaki üçüncü taraf lisans bildirimleri korunmuştur.
